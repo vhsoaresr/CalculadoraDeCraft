@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/bravate.png">
+	<link rel="icon" type="image/png" href="images/bravate.png">
+	<title>
+		Bravate Team - Calculadora de Craft
+	</title>
+	<!--     Fonts and icons     -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+	<link href="assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+</head>
+
+<body class="">
+	<div class="wrapper">
+		<div class="sidebar">
+			<!--
+				Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+			-->
+			<div class="sidebar-wrapper">
+				<div class="logo">
+					<img src="images/bravate.png" />
+				</div>
+				<ul class="nav">
+					<li>
+						<a href="./index.html">
+							<i class="tim-icons icon-puzzle-10"></i>
+							<p>Calculadora de Sets</p>
+						</a>
+					</li>
+					<li class="active ">
+						<a href="#">
+							<i class="tim-icons icon-puzzle-10"></i>
+							<p>Calculadora de Craft</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="tim-icons icon-square-pin"></i>
+							<p>Mapa</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-panel">
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+				<div class="container-fluid">
+					<div class="navbar-wrapper">
+						<div class="navbar-toggle d-inline">
+							<button type="button" class="navbar-toggler">
+								<span class="navbar-toggler-bar bar1"></span>
+								<span class="navbar-toggler-bar bar2"></span>
+								<span class="navbar-toggler-bar bar3"></span>
+							</button>
+						</div>
+						<a class="navbar-brand" href="javascript:void(0)">Calculadora de Craft</a>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-bar navbar-kebab"></span>
+						<span class="navbar-toggler-bar navbar-kebab"></span>
+						<span class="navbar-toggler-bar navbar-kebab"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="search-bar input-group">
+								<button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal">
+									<i class="tim-icons icon-zoom-split"></i>
+									<span class="d-lg-none d-md-block">Buscar</span>
+								</button>
+							</li>
+							<li class="dropdown nav-item">
+								<a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
+									<div class="notification d-none"></div>
+									<i class="tim-icons icon-sound-wave"></i>
+									<p class="d-lg-none">
+										Notificações
+									</p>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
+									<li class="nav-link"><a href="#" class="nav-item dropdown-item">Nenhuma Notificação</a></li>
+								</ul>
+							</li>
+							<li class="dropdown nav-item">
+								<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+									<div class="photo">
+										<img src="assets/img/anime3.png" title="VH">
+									</div>
+									<b class="caret d-none d-lg-block d-xl-block"></b>
+									<p class="d-lg-none">
+										Sair
+									</p>
+								</a>
+								<ul class="dropdown-menu dropdown-navbar">
+									<li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Perfil</a></li>
+									<li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Configurações</a></li>
+									<li class="dropdown-divider"></li>
+									<li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Sair</a></li>
+								</ul>
+							</li>
+							<li class="separator d-lg-none"></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="BUSCAR">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<i class="tim-icons icon-simple-remove"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Navbar -->
+			<div class="content">
+				<div class="row" id="sets">
+					<div class="col-lg-2">
+						<div class="card card-chart">
+							<div class="card-header">
+								<h3 class="card-title"><i class="tim-icons icon-puzzle-10 text-primary"></i>Sage</h3>
+							</div>
+							<div class="card-body" data-set="sage" data-physical="15" data-elemental="85">
+								<img src="images/sage_head.png" data-part="head" data-weight="1.2" />
+								<img src="images/sage_chest.png" data-part="chest" data-weight="1.8" />
+								<img src="images/sage_hands.png" data-part="hands" data-weight="0.9" />
+								<img src="images/sage_legs.png" data-part="legs" data-weight="1.2" />
+								<img src="images/sage_foot.png" data-part="foot" data-weight="0.9" />
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="card card-chart">
+							<div class="card-header">
+								<h3 class="card-title"><i class="tim-icons icon-puzzle-10 text-primary"></i>Duelist</h3>
+							</div>
+							<div class="card-body" data-set="duelist" data-physical="23" data-elemental="77">
+								<img src="images/duelist_head.png" data-part="head" data-weight="2" />
+								<img src="images/duelist_chest.png" data-part="chest" data-weight="3" />
+								<img src="images/duelist_hands.png" data-part="hands" data-weight="1.5" />
+								<img src="images/duelist_legs.png" data-part="legs" data-weight="2" />
+								<img src="images/duelist_foot.png" data-part="foot" data-weight="1.5" />
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="card card-chart">
+							<div class="card-header">
+								<h3 class="card-title"><i class="tim-icons icon-puzzle-10 text-primary"></i>Explorer</h3>
+							</div>
+							<div class="card-body" data-set="explorer" data-physical="50" data-elemental="50">
+								<img src="images/explorer_head.png" data-part="head" data-weight="4" />
+								<img src="images/explorer_chest.png" data-part="chest" data-weight="6" />
+								<img src="images/explorer_hands.png" data-part="hands" data-weight="3" />
+								<img src="images/explorer_legs.png" data-part="legs" data-weight="4" />
+								<img src="images/explorer_foot.png" data-part="foot" data-weight="3" />
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="card card-chart">
+							<div class="card-header">
+								<h3 class="card-title"><i class="tim-icons icon-puzzle-10 text-primary"></i>Trapper</h3>
+							</div>
+							<div class="card-body" data-set="trapper" data-physical="67" data-elemental="33">
+								<img src="images/trapper_head.png" data-part="head" data-weight="6" />
+								<img src="images/trapper_chest.png" data-part="chest" data-weight="9" />
+								<img src="images/trapper_hands.png" data-part="hands" data-weight="4.5" />
+								<img src="images/trapper_legs.png" data-part="legs" data-weight="6" />
+								<img src="images/trapper_foot.png" data-part="foot" data-weight="4.5" />
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="card card-chart">
+							<div class="card-header">
+								<h3 class="card-title"><i class="tim-icons icon-puzzle-10 text-primary"></i>Soldier</h3>
+							</div>
+							<div class="card-body" data-set="soldier" data-physical="90" data-elemental="10">
+								<img src="images/soldier_head.png" data-part="head" data-weight="8" />
+								<img src="images/soldier_chest.png" data-part="chest" data-weight="12" />
+								<img src="images/soldier_hands.png" data-part="hands" data-weight="6" />
+								<img src="images/soldier_legs.png" data-part="legs" data-weight="8" />
+								<img src="images/soldier_foot.png" data-part="foot" data-weight="6" />
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="card card-chart">
+							<div class="card-header">
+								<h3 class="card-title"><i class="tim-icons icon-puzzle-10 text-primary"></i>Heavy</h3>
+							</div>
+							<div class="card-body" data-set="heavy" data-physical="92" data-elemental="8">
+								<img src="images/heavy_head.png" data-part="head" data-weight="10" />
+								<img src="images/heavy_chest.png" data-part="chest" data-weight="15" />
+								<img src="images/heavy_hands.png" data-part="hands" data-weight="7.5" />
+								<img src="images/heavy_legs.png" data-part="legs" data-weight="10" />
+								<img src="images/heavy_foot.png" data-part="foot" data-weight="7.5" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-chart">
+							<div class="card-header">
+								<h3 class="card-title"><i class="tim-icons icon-puzzle-10 text-primary"></i>Cálculo</h3>
+							</div>
+							<div class="card-body">
+								<table class="table text-center tablesorter">
+									<thead class=" text-primary">
+										<tr>
+											<th class="text-center">
+												Set
+											</th>
+											<th class="text-center">
+												Peso
+											</th>
+											<th class="text-center">
+												Fisico
+											</th>
+											<th class="text-center">
+												Elemental
+											</th>
+										</tr>
+									</thead>
+									<tbody id="set">
+										<tr data-part="head">
+											<td>
+												<img width="150px" />
+											</td>
+											<td class="weight">
+											</td>
+											<td class="physical">
+											</td>
+											<td class="elemental">
+											</td>
+										</tr>
+										<tr data-part="chest">
+											<td>
+												<img width="150px" />
+											</td>
+											<td class="weight">
+											</td>
+											<td class="physical">
+											</td>
+											<td class="elemental">
+											</td>
+										</tr>
+										<tr data-part="hands">
+											<td>
+												<img width="150px" />
+											</td>
+											<td class="weight">
+											</td>
+											<td class="physical">
+											</td>
+											<td class="elemental">
+											</td>
+										</tr>
+										<tr data-part="legs">
+											<td>
+												<img width="150px" />
+											</td>
+											<td class="weight">
+											</td>
+											<td class="physical">
+											</td>
+											<td class="elemental">
+											</td>
+										</tr>
+										<tr data-part="foot">
+											<td>
+												<img width="150px" />
+											</td>
+											<td class="weight">
+											</td>
+											<td class="physical">
+											</td>
+											<td class="elemental">
+											</td>
+										</tr>
+									</tbody>
+									<tfoot id="total">
+										<tr>
+											<td>
+												Total
+											</td>
+											<td class="weight">
+											</td>
+											<td class="physical">
+											</td>
+											<td class="elemental">
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="copyright">
+						© Bravate Team
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!--   Core JS Files   -->
+	<script src="assets/js/core/jquery.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+	<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+	<!-- Chart JS -->
+	<script src="assets/js/plugins/chartjs.min.js"></script>
+	<!--  Notifications Plugin    -->
+	<script src="assets/js/plugins/bootstrap-notify.js"></script>
+	<!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+	<script src="assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+	<script src="assets/demo/demo.js"></script>
+	<script>
+		$(document).ready(function () {
+			$().ready(function () {
+				$sidebar = $('.sidebar');
+				$navbar = $('.navbar');
+				$main_panel = $('.main-panel');
+				$full_page = $('.full-page');
+				$sidebar_responsive = $('body > .navbar-collapse');
+				sidebar_mini_active = true;
+				white_color = false;
+				window_width = $(window).width();
+				$('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function () {
+					if (sidebar_mini_active == true) {
+						$('body').removeClass('sidebar-mini');
+						sidebar_mini_active = false;
+						blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+					} else {
+						$('body').addClass('sidebar-mini');
+						sidebar_mini_active = true;
+						blackDashboard.showSidebarMessage('Sidebar mini activated...');
+					}
+
+					// we simulate the window Resize so the charts will get updated in realtime.
+					var simulateWindowResize = setInterval(function () {
+						window.dispatchEvent(new Event('resize'));
+					}, 180);
+
+					// we stop the simulation of Window Resize after the animations are completed
+					setTimeout(function () {
+						clearInterval(simulateWindowResize);
+					}, 1000);
+				});
+
+				$("#sets").click(function (event) {
+					if (event.target.nodeName == "IMG") {
+						var set = event.target.parentElement.dataset.set;
+						var physical = event.target.parentElement.dataset.physical;
+						var elemental = event.target.parentElement.dataset.elemental;
+
+						var part = event.target.dataset.part;
+						var weight = event.target.dataset.weight;
+
+						$('#sets').find('[data-part="' + part + '"]').css('border', 0);
+						event.target.style.border = 'solid 3px';
+
+
+						$('#set > [data-part="' + part + '"] > td > img').attr("src", event.target.src);
+
+						$('#set > [data-part="' + part + '"] > .weight').html(weight);
+						$('#set > [data-part="' + part + '"] > .physical').html(physical + '%');
+						$('#set > [data-part="' + part + '"] > .elemental').html(elemental + '%');
+
+						$('#set > [data-part="' + part + '"]').data('weight', weight);
+						$('#set > [data-part="' + part + '"]').data('physical', physical);
+						$('#set > [data-part="' + part + '"]').data('elemental', elemental);
+
+						var parts = $('#set > tr');
+						var total = { w: 0, p: 0, e: 0 };
+
+						for (var i = 0; i < parts.length; i++) {
+							if ($(parts[i]).data('weight'))
+								total.w += Number($(parts[i]).data('weight'));
+							if ($(parts[i]).data('physical'))
+								total.p += Number($(parts[i]).data('physical'));
+							if ($(parts[i]).data('elemental'))
+								total.e += Number($(parts[i]).data('elemental'));
+						}
+
+						total.p = total.p / 5;
+						total.e = total.e / 5;
+
+						$('#total > tr > .weight').html(total.w);
+						$('#total > tr > .physical').html(total.p + '%');
+						$('#total > tr > .elemental').html(total.e + '%');
+					}
+				});
+
+
+			});
+		});
+	</script>
+</body>
+
+</html>
